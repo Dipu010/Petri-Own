@@ -1,6 +1,6 @@
 const routes = {
     dashboard: {
-        label: 'Dashboard',
+        label: 'About',
         uri: '/dashboard',
         slug: 'dashboard',
         children: []

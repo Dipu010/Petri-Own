@@ -7,8 +7,8 @@ import BasicModal2 from "./components/modal/modal2";
 export const Dashboard = () => {
   return (
     <div>
-      <div className="intro-y grid grid-cols-12 gap-6 mt-5">
-        <div className="col-span-12 lg:col-span-6">
+      <div className="intro-y grid grid-cols-12 gap-10 mt-5">
+        <div className="col-span-12 lg:col-span-6 mb">
           <div className="intro-y box h-full">
             <div className="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60 dark:border-darkmode-400">
               <h2 className="font-medium text-base mr-auto">Petri Net</h2>
@@ -46,16 +46,16 @@ export const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-12 lg:col-span-6 ">
-          <div className="intro-y box b h-full">
+        <div className="col-span-12 lg:col-span-6   ">
+          <div className="intro-y box b h-full ">
             <div className="flex flex-col sm:flex-row items-center p-5 border-b  border-slate-200/60 dark:border-darkmode-400">
-              <h2 className="font-medium text-base mr-auto">
+              <h2 className="font-medium text-base mr-auto ">
                 Applications of Petri Nets
               </h2>
             </div>
 
-            <div className="p-5">
-              <div className="  p-2 rounded-md mb-2 border-2 border-black">
+            <div className="p-5 mt-2">
+              <div className="  p-2 rounded-md mb-10 border-2 border-gray-300 hover:bg-[#f4f4f5]  ">
                 <div className="flex items-center">
                   <div className="font-medium text-lg">
                     Rumours Detection and Blocking in OSNs
@@ -73,7 +73,7 @@ export const Dashboard = () => {
                   features.
                 </div>
               </div>
-              <div className=" mb-2 p-2 rounded-md border-2 border-black">
+              <div className=" mb-2 p-2 rounded-md border-2 border-gray-300 hover:bg-[#f4f4f5] ">
                 <div className="flex items-center">
                   <div className="font-medium text-lg ">
                     {" "}
@@ -110,93 +110,14 @@ export const Dashboard = () => {
         </div>
       </div>
       <div className="intro-y grid grid-cols-12 gap-6 mt-5">
-        <div className="col-span-12 lg:col-span-6">
+        <div className="col-span-12 lg:col-span-6  ">
           <div className="intro-y box h-full">
-            <div className="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60 dark:border-darkmode-400">
-              <h2 className="font-medium text-base mr-auto">Author</h2>
+            <div className="flex flex-col sm:flex-row items-center p-5 border-b   border-slate-200/60 dark:border-darkmode-400">
+              <h2 className="font-medium text-base mr-auto">Types Of Petri Nets</h2>
             </div>
-            <div className="p-5">
-              <div className="flex items-start px-5">
-                <div className="w-full flex flex-col lg:flex-row items-center">
-                  <div className="w-16 h-16 image-fit">
-                    <img
-                      alt="Alberto G. Valerio"
-                      className="rounded-full"
-                      src="https://albertovalerio.com/img/alberto-valerio-freelance-web-developer-quote.jpg"
-                    />
-                  </div>
-                  <div className="lg:ml-4 text-center lg:text-left mt-3 lg:mt-0">
-                    <span className="font-medium">Alberto G. Valerio</span>
-                    <div className="text-slate-500 text-xs mt-0.5">
-                      Freelance Software Developer | Master Degree Student in
-                      Computer Science
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <img src="/images/Petri-Nets_Types.png" />
               </div>
-              <div className="text-center lg:text-left p-5">
-                <div className="mb-3">
-                  My name is <strong>Alberto G. Valerio</strong>, I'm a
-                  freelance software developer and a Master Degree student in
-                  Computer Science, curriculum studies in Artificial
-                  Intelligence at{" "}
-                  <strong>
-                    University of Bari "<em>Aldo Moro</em>", Italy
-                  </strong>
-                  .
-                </div>
-                <div className="mb-3">
-                  This tool has been realized as a lab project for the exam in{" "}
-                  <strong>Formal Methods in Computer Science</strong> with{" "}
-                  <strong>Prof. Berardina Nadja De Carolis</strong>.
-                </div>
-                <div className="flex items-center justify-center lg:justify-start text-primary underline mt-5">
-                  <Mail className="w-5 h-5 mr-2" />
-                  <Link
-                    to="#"
-                    onClick={(e) => {
-                      window.location.href = "mailto:info@albertovalerio.com";
-                    }}
-                  >
-                    info@albertovalerio.com
-                  </Link>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start text-primary underline mt-5">
-                  <Home className="w-5 h-5 mr-2" />
-                  <Link
-                    to="#"
-                    onClick={(e) => {
-                      window.location.href = "https://albertovalerio.com";
-                    }}
-                  >
-                    https://albertovalerio.com
-                  </Link>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start text-primary underline mt-5">
-                  <Save className="w-5 h-5 mr-2" />
-                  <Link
-                    to="#"
-                    onClick={(e) => {
-                      window.location.href = "https://github.com/betino";
-                    }}
-                  >
-                    https://github.com/betino
-                  </Link>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start text-primary underline mt-5">
-                  <ChevronRight className="w-5 h-5 mr-2" />
-                  <Link
-                    to="#"
-                    onClick={(e) => {
-                      window.location.href =
-                        "https://albertovalerio.com/PetriNet-Editor";
-                    }}
-                  >
-                    https://albertovalerio.com/PetriNet-Editor
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div className="col-span-12 lg:col-span-6 ">
