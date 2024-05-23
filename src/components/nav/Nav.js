@@ -46,7 +46,7 @@ export const Nav = ({classes, mobileCss}) => {
                     </li>
                 </ul>
             </li>
-            <li>
+            {/* <li>
                 <NavLink to={r.analysis.uri} className={r.analysis.children.map(u => u.uri).includes(location.pathname) ? classes.a + ' ' + classes.active : classes.a} onClick={(e) => toggleMenu(e)}>
                     <div className={classes.icon}> <Icon.BarChart /> </div>
                     <div className={classes.title}>
@@ -66,7 +66,7 @@ export const Nav = ({classes, mobileCss}) => {
                         })
                     }
                 </ul>
-            </li>
+            </li> */}
         </ul>
     )
 }
