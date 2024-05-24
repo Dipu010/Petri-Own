@@ -39,10 +39,10 @@ export const Nav = ({classes, mobileCss}) => {
                 </NavLink>
                 <ul>
                     <li>
-                        <NavLink to={r.simulation.children[0].uri} className={({ isActive }) => isActive ? classes.a + ' ' + classes.active : classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
+                        {/* <NavLink to={r.simulation.children[0].uri} className={({ isActive }) => isActive ? classes.a + ' ' + classes.active : classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
                             <div className={classes.icon}> <Icon.ChevronRight /> </div>
                             <div className={classes.title}> {r.simulation.children[0].label} </div>
-                        </NavLink>
+                        </NavLink> */}
                     </li>
                 </ul>
             </li>
