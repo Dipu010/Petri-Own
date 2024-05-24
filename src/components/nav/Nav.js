@@ -70,6 +70,7 @@ export const Nav = ({classes, mobileCss}) => {
             </li> */}
             <li>
                 <NavLink to={r.quiz.uri} className={location.pathname === r.quiz.uri ? classes.a + ' '  : classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
+ 
                     <div className={classes.icon}><MdOutlineQuiz className=' w-6 h-6'/></div>
                     <div className={classes.title}>{r.quiz.label}</div>
                 </NavLink>
