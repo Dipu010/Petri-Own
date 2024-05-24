@@ -240,7 +240,7 @@ export const Editor = () => {
         <Modal opt={modalOpt} canvasOpt={canvasOpt} onResetCanvas={onResetCanvas} onChangeStyle={onChangeStyle} />
         <Sidebar isVisible={isSidebarVisible} onDelete={onDeleteEl} onUpdate={onUpdateEl} />
         <EditorControls onSaveCanvas={onSaveCanvas} />
-        <div className="grid grid-cols-12 gap-5 mt-5">
+        <div className="grid grid-cols-12 gap-5 mt-8">
             <div className="col-span-12">
                 <ReactFlowProvider>
                     <div className="box p-5 reactflow-wrapper" style={{ height:(window.innerHeight-20-( reactFlowWrapper.current ? reactFlowWrapper.current.getBoundingClientRect().top : 0))}} ref={reactFlowWrapper}>
