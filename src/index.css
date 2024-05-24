@@ -12113,11 +12113,16 @@ html body{
                 box-shadow: 0px 3px 7px #0000001c;
             }
 .side-nav {
-    width: 300px;
+    width:1500px ;
+    height: 100px;
     overflow-x: hidden;
     padding-right: 1.25rem;
-    padding-bottom: 4rem;
-    
+    position: sticky;
+    top: 0;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    z-index: 100;
+    background-color: black;
 }
 @media (max-width: calc(1280px - 1px)) {
     .side-nav {
@@ -12145,7 +12150,7 @@ html body{
     position: relative;
     z-index: 10;
     height: 1px;
-    width: 100%;
+    width: 50%;
     background-color: rgb(255 255 255 / 0.08);
 }
 .dark .side-nav .side-nav__devider{
@@ -15275,6 +15280,7 @@ html body{
   }
 .side-nav > ul > li > .side-menu:hover:not(.side-menu--active):not(.side-menu--open)
                     .side-menu__icon:before{
+                      width: 120%;
     background-color: rgb(255 255 255 / 0.05);
 }
 .dark .side-nav > ul > li > .side-menu:hover:not(.side-menu--active):not(.side-menu--open)

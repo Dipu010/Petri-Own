@@ -23,15 +23,15 @@ export const Nav = ({classes, mobileCss}) => {
     }
 
     return (
-        <ul className={mobileCss ? 'border-t border-theme-29 py-5 ' + mobileCss : ''}>
+        <ul className={mobileCss ? 'border-t border-theme-29 py-5 flex' + mobileCss : 'flex  gap-5 text-2xl '}>
             <li>
-                <NavLink to={r.dashboard.uri} className={location.pathname === r.dashboard.uri ? classes.a + ' ' + classes.active : classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
+                <NavLink to={r.dashboard.uri} className={location.pathname === r.dashboard.uri ? classes.a + ' ': classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
                     <div className={classes.icon}> <Icon.Home /> </div>
                     <div className={classes.title}>{r.dashboard.label}</div>
                 </NavLink>
             </li>
             <li>
-                <NavLink to={r.simulation.uri} className={r.simulation.children.map(u => u.uri).includes(location.pathname) ? classes.a + ' ' + classes.active : classes.a} onClick={(e) => toggleMenu(e)}>
+                <NavLink to={r.simulation.uri} className={r.simulation.children.map(u => u.uri).includes(location.pathname) ? classes.a + ' ' : classes.a} onClick={(e) => toggleMenu(e)}>
                     <div className={classes.icon}> <Icon.GitPullRequest /> </div>
                     <div className={classes.title}>
                         { r.simulation.label }
@@ -69,7 +69,8 @@ export const Nav = ({classes, mobileCss}) => {
                 </ul>
             </li> */}
             <li>
-                <NavLink to={r.quiz.uri} className={location.pathname === r.quiz.uri ? classes.a + ' ' + classes.active : classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
+                <NavLink to={r.quiz.uri} className={location.pathname === r.quiz.uri ? classes.a + ' '  : classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
+ 
                     <div className={classes.icon}><MdOutlineQuiz className=' w-6 h-6'/></div>
                     <div className={classes.title}>{r.quiz.label}</div>
                 </NavLink>
