@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html, body, #root {
     width: 100%;
     height: 100%;
@@ -262,11 +266,11 @@ video {
     --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
-    --tw-ring-color: #2563eb;
+    --tw-ring-color: #000000;
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    border-color: #2563eb;
+    border-color: #000000;
 }
 input::-moz-placeholder, textarea::-moz-placeholder{
     color: #6b7280;
@@ -328,7 +332,7 @@ select{
     flex-shrink: 0;
     height: 1rem;
     width: 1rem;
-    color: #2563eb;
+    color: #000000;
     background-color: #fff;
     border-color: #6b7280;
     border-width: 1px;
@@ -346,7 +350,7 @@ select{
     --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
     --tw-ring-offset-width: 2px;
     --tw-ring-offset-color: #fff;
-    --tw-ring-color: #2563eb;
+    --tw-ring-color: #000000;
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -489,11 +493,11 @@ select{
     --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
-    --tw-ring-color: #2563eb;
+    --tw-ring-color: #000000;
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    border-color: #2563eb;
+    border-color: #000000;
 }
 .form-select{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
@@ -4191,7 +4195,7 @@ select{
  */
 /* Default colors */
 :root {
-    --color-primary: 30 64 175;
+    --color-primary: 0 0 0;
     --color-secondary: 226 232 240;
     --color-success: 132 204 22;
     --color-info: 6 182 212;
@@ -12105,10 +12109,11 @@ html body{
                 box-shadow: 0px 3px 7px #0000001c;
             }
 .side-nav {
-    width: 230px;
+    width: 300px;
     overflow-x: hidden;
     padding-right: 1.25rem;
     padding-bottom: 4rem;
+    
 }
 @media (max-width: calc(1280px - 1px)) {
     .side-nav {
