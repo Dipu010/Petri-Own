@@ -7,8 +7,8 @@ const routes = {
     },
     simulation: {
         label: 'Simulation',
-        uri: '#',
-        slug: '#',
+        uri: '/dashboard/editor',
+        slug: 'editor',
         children: [
         {
             label: 'Petri Net Editor',

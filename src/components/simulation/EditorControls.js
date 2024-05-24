@@ -38,11 +38,11 @@ export const EditorControls = ({ onSaveCanvas }) => {
     }
 
     return(
-        <div className="grid grid-cols-10 gap-5 mt-5">
-            <div className="col-span-12 xl:col-span-4">
-                <ul className="nav nav-boxed-tabs justify-center h-full flex-wrap">
-                    <li className="intro-x mb-2">
-                        <div className="nav-item box h-full mr-3 flex items-center zoom-in">
+        <div className="grid grid-cols-15  gap-5 mt-5 h-[70px] ">
+            <div className="col-span-12  xl:col-span-4">
+                <ul className="nav nav-boxed-tabs justify-center gap-5 h-full flex-wrap">
+                    <li className="intro-x mb-2 flex flex-col  h-[80px] ">
+                        <div className="nav-item box h-full mr-3 flex  items-center zoom-in ">
                             <button
                                 type="button"
                                 className={'nav-link h-full px-6' + (activeTool === 'save' ? ' active' : '')}
@@ -53,8 +53,9 @@ export const EditorControls = ({ onSaveCanvas }) => {
                                 <Icon.Save className="w-6 h-6" />
                             </button>
                         </div>
+                        <div className=' mt-2'>Save Canvas</div>
                     </li>
-                    <li className="intro-x mb-2">
+                    <li className="intro-x mb-2 flex flex-col h-[80px]">
                         <div className="nav-item box h-full mr-3 flex items-center zoom-in">
                             <button
                                 type="button"
@@ -66,8 +67,9 @@ export const EditorControls = ({ onSaveCanvas }) => {
                                 <Icon.Circle className="w-6 h-6" />
                             </button>
                         </div>
+                        <div className='mt-2'>Add a PLACE</div>
                     </li>
-                    <li className="intro-x mb-2">
+                    <li className="intro-x mb-2 flex flex-col  h-[80px]">
                         <div className="nav-item box h-full mr-3 flex items-center zoom-in">
                             <button
                                 type="button"
@@ -79,8 +81,9 @@ export const EditorControls = ({ onSaveCanvas }) => {
                                 <Icon.Smartphone className="w-6 h-6" />
                             </button>
                         </div>
+                        <div className=' mt-2 max-w-[70px] text-center '>Add a Transition</div>
                     </li>
-                    <li className="intro-x mb-2">
+                    <li className="intro-x mb-2 flex flex-col h-[80px]">
                         <div className="nav-item box h-full mr-3 flex items-center zoom-in">
                             <button
                                 type="button"
@@ -92,8 +95,9 @@ export const EditorControls = ({ onSaveCanvas }) => {
                                 <Icon.MousePointer className="w-6 h-6" />
                             </button>
                         </div>
+                        <div className=' mt-2 max-w-[70px] text-center '>Mouse Pointer</div>
                     </li>
-                    <li className="intro-x mb-2">
+                    <li className="intro-x mb-2 flex flex-col h-[80px]">
                         <div className="nav-item box h-full mr-3 flex items-center zoom-in">
                             <button
                                 type="button"
@@ -105,8 +109,9 @@ export const EditorControls = ({ onSaveCanvas }) => {
                                 <Icon.CornerDownRight className="w-6 h-6" />
                             </button>
                         </div>
+                        <div className=' mt-2 max-w-[70px] text-center '>Choose Arc's style</div>
                     </li>
-                    <li className="intro-x mb-2">
+                    <li className="intro-x mb-2 flex flex-col h-[80px]">
                         <div className="nav-item box h-full mr-3 flex items-center zoom-in">
                             <button
                                 type="button"
@@ -118,10 +123,11 @@ export const EditorControls = ({ onSaveCanvas }) => {
                                 <Icon.Trash2 className="w-6 h-6" />
                             </button>
                         </div>
+                        <div className=' mt-2 max-w-[70px] text-center '>Delete canvas</div>
                     </li>
                 </ul>
             </div>
-            <div className="col-span-12 xl:col-span-6">
+            {/* <div className="col-span-12 xl:col-span-6">
                 <div className="box p-5 flex items-center mb-2">
                     <div className="w-10 h-full">
                         <Icon.Info />
@@ -131,7 +137,7 @@ export const EditorControls = ({ onSaveCanvas }) => {
                         <div className="text-slate-500 text-xs mt-0.5 lg:h-7">{w[selectMsg].msg}</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

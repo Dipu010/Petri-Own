@@ -3,12 +3,15 @@ import { MousePointer, XCircle } from "react-feather"
 import { useDispatch } from "react-redux"
 import { setActiveTool, setCanvasOpt, setModalOpt } from "../../features/controlsSlice"
 import './css/utils.css'
+import { PiStepsLight } from "react-icons/pi";
+import { GoDash } from "react-icons/go";
+import { BsBezier2 } from "react-icons/bs";
 
 export const Modal = ({ opt, canvasOpt, onResetCanvas, onChangeStyle }) => {
 
     const dispatch = useDispatch()
     const arcType = canvasOpt && canvasOpt[opt.target] ? canvasOpt[opt.target].arcType : ''
-    
+   
     const onCancel = () => {
         dispatch(setModalOpt({isVisible:false}))
         dispatch(setActiveTool('place'))
@@ -21,10 +24,10 @@ export const Modal = ({ opt, canvasOpt, onResetCanvas, onChangeStyle }) => {
                     <div className="modal-body p-0">
                         <div className="p-5 text-center">
                             {
-                                opt.confirmBtn === 'Delete' ? <XCircle className={'w-16 h-16 mx-auto mt-3 text-'+opt.context} /> : <MousePointer className={'w-16 h-16 mx-auto mt-3 text-'+opt.context} />
+                                opt.confirmBtn === 'Delete' ? <XCircle className={'w-16 h-16 mx-auto mt-3 text-'+opt.context} /> : arcType=='smoothstep'?<PiStepsLight className=' w-20 h-20 mx-auto mt-3' />: arcType=='straight'?<GoDash className=' w-20 h-20 mx-auto mt-3' />:<BsBezier2 className=' w-20 h-20 mx-auto mt-3'/>
                             }
-                            <div className="text-3xl mt-5">{opt.title}</div>
-                            <div className="text-slate-500 mt-2">{opt.msg}</div>
+                            {/* <div className="text-3xl mt-5">{opt.title}</div> */}
+                            {/* <div className="text-slate-500 mt-2">{opt.msg}</div> */}
                         </div>
                         {
                             opt.confirmBtn === 'Confirm' ? (
