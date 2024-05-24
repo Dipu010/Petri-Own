@@ -12,10 +12,10 @@ const App = () => {
     return(
         <div className="main">
             <NavMobile />
-            <div className="flex">
+            <div className="flex flex-col ">
                 <NavDesktop />
                 <div className="content mt-14 md:mt-0">
-                    <Topbar />
+                    
                     {
                         location.pathname === '/dashboard' ? <Dashboard /> : <Outlet />
                     }        

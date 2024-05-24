@@ -135,6 +135,7 @@ export const Dashboard = () => {
                   tool is still under development and any suggestion will be
                   taken into account.
                 </div>
+                
               </div>
               <div className="flex items-center justify-center lg:justify-start text-primary underline mt-5">
                 <ChevronRight className="w-5 h-5 mr-2" />
@@ -147,11 +148,17 @@ export const Dashboard = () => {
                 >
                   https://docs.google.com/forms/d/e/1FAIpQLSd67vcwhwwpaMps2RMoriv-hyBCyg4DFGyodreEjlD4LqE3KA/viewform
                 </Link>
+                
               </div>
+              
             </div>
+            
           </div>
+          <div className=" mt-4 right-0 text-right mr-1 ">Copyright @ 2024</div>
         </div>
+        
       </div>
+      
     </div>
   );
 };

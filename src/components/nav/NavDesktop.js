@@ -14,12 +14,12 @@ export const NavDesktop = () => {
     }
     
     return (
-        <nav className="side-nav">
-            <NavLink to="/" className="intro-x flex items-center pl-5 pt-4">
-                <img alt="logo" src="/images/logo_w.svg"  />
+        <nav className="side-nav flex">
+            <NavLink to="/" className="intro-x flex items-center pl-5  w-[200px] mt-[-60px]  overflow-hidden object-fill h-[150px] mr-5 ">
+                <img alt="logo" src="/images/logo_w.svg"  width="100px" height="70px"/>
             </NavLink>
-            <div className="side-nav__devider my-6"></div>
-            <Nav classes={classes} />
+            {/* <div className="side-nav__devider my-6"></div> */}
+            <Nav classes={classes}  />
         </nav>            
     )
 }
