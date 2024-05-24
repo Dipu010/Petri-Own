@@ -16,6 +16,7 @@ import { IncidenceMatrix } from './components/analysis/incidence_matrix/Incidenc
 import { TInvariants } from './components/analysis/invariants/TInvariants'
 import { SInvariants } from './components/analysis/invariants/SInvariants'
 import { SiphonsTraps } from './components/analysis/siphons_traps/SiphonsTraps'
+import Quiz from './components/quiz/quiz'
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: r.simulation.children[0].slug,
                 element: <Editor />,
+            },
+            {
+                path:r.quiz.slug,
+                element:<Quiz/>
             },
             {
                 path: r.analysis.children[0].slug,

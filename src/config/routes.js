@@ -21,6 +21,12 @@ const routes = {
             slug: 'token-game'
         }
     ]},
+    quiz:{
+        label: 'Quiz',
+        uri: '/dashboard/quiz',
+        slug: 'quiz',
+        children: []
+    },
     analysis: {
         label: 'Analysis',
         uri: '#',

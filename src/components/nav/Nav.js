@@ -6,6 +6,7 @@ import { routes as r } from "../../config/routes"
 import './css/nav.css'
 import { useDispatch } from 'react-redux'
 import { setMobileMenu } from '../../features/controlsSlice'
+import { MdOutlineQuiz } from "react-icons/md";
 
 export const Nav = ({classes, mobileCss}) => {
 
@@ -34,7 +35,7 @@ export const Nav = ({classes, mobileCss}) => {
                     <div className={classes.icon}> <Icon.GitPullRequest /> </div>
                     <div className={classes.title}>
                         { r.simulation.label }
-                        <div className={classes.subIcon}> <Icon.ChevronDown /> </div>
+                        {/* <div className={classes.subIcon}> <Icon.ChevronDown /> </div> */}
                     </div>
                 </NavLink>
                 <ul>
@@ -67,6 +68,12 @@ export const Nav = ({classes, mobileCss}) => {
                     }
                 </ul>
             </li> */}
+            <li>
+                <NavLink to={r.quiz.uri} className={location.pathname === r.quiz.uri ? classes.a + ' ' + classes.active : classes.a} onClick={() => dispatch(setMobileMenu({mobileCss:'hidden',openMenu:''}))}>
+                    <div className={classes.icon}><MdOutlineQuiz className=' w-6 h-6'/></div>
+                    <div className={classes.title}>{r.quiz.label}</div>
+                </NavLink>
+            </li>
         </ul>
     )
 }
