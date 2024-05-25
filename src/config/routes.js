@@ -6,73 +6,17 @@ const routes = {
         children: []
     },
     simulation: {
-        label: 'Simulation',
+        label: 'Editor',
         uri: '/dashboard/editor',
         slug: 'editor',
-        children: [
-        {
-            label: 'Petri Net Editor',
-            uri: '/dashboard/editor',
-            slug: 'editor',
-        },
-        {
-            label: 'Token Game',
-            uri: '/dashboard/token-game',
-            slug: 'token-game'
-        }
-    ]},
+        children: []
+    },
     quiz:{
         label: 'Quiz',
         uri: '/dashboard/quiz',
         slug: 'quiz',
         children: []
-    },
-    analysis: {
-        label: 'Analysis',
-        uri: '#',
-        slug: '#',
-        children: [
-        {
-            label: 'Reachability',
-            uri: '/dashboard/reachability',
-            slug: 'reachability',
-        },
-        {
-            label: 'Boundedness',
-            uri: '/dashboard/boundedness',
-            slug: 'boundedness'
-        },
-        {
-            label: 'Liveness (Beta)',
-            uri: '/dashboard/liveness',
-            slug: 'liveness'
-        },
-        {
-            label: 'Reversibility',
-            uri: '/dashboard/reversibility',
-            slug: 'reversibility'
-        },
-        {
-            label: 'Incidence Matrix',
-            uri: '/dashboard/incidence-matrix',
-            slug: 'incidence-matrix'
-        },
-        {
-            label: 'T-Invariants',
-            uri: '/dashboard/t-invariants',
-            slug: 't-invariants'
-        },
-        {
-            label: 'S-Invariants',
-            uri: '/dashboard/s-invariants',
-            slug: 's-invariants'
-        },
-        {
-            label: 'Siphons & Traps',
-            uri: '/dashboard/siphons-traps',
-            slug: 'siphons-traps'
-        }
-    ]}
+    }
 }
 
 const getRouteLabel = uri => {
