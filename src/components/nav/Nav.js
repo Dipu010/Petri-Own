@@ -7,6 +7,7 @@ import './css/nav.css'
 import { useDispatch } from 'react-redux'
 import { setMobileMenu } from '../../features/controlsSlice'
 import { MdOutlineQuiz } from "react-icons/md";
+import { FaPen } from "react-icons/fa";
 
 export const Nav = ({classes, mobileCss}) => {
 
@@ -32,7 +33,7 @@ export const Nav = ({classes, mobileCss}) => {
             </li>
             <li>
                 <NavLink to={r.simulation.uri} className={r.simulation.children.map(u => u.uri).includes(location.pathname) ? classes.a + ' ' : classes.a} onClick={(e) => toggleMenu(e)}>
-                    <div className={classes.icon}> <Icon.GitPullRequest /> </div>
+                    <div className={classes.icon}> <FaPen /> </div>
                     <div className={classes.title}>
                         { r.simulation.label }
                         {/* <div className={classes.subIcon}> <Icon.ChevronDown /> </div> */}

@@ -15,9 +15,12 @@ export const NavDesktop = () => {
     
     return (
         <nav className="side-nav flex">
-            <NavLink to="/" className="intro-x flex items-center pl-5  w-[200px] mt-[-60px]  overflow-hidden object-fill h-[150px] mr-5 ">
-                <img alt="logo" src="/images/logo_w.svg"  width="100px" height="70px"/>
+            <div className=" flex flex-col">
+            <NavLink to="/" className="intro-x flex items-center pl-1  w-[73px] mt-[-25px]  overflow-hidden object-fill h-[70px] mr-5  bg-white rounded-full">
+                <img alt="logo" src="https://iig-uni-freiburg.github.io/images/wolfgang/icon.png"  width="65px" height="65px"/>
             </NavLink>
+            <NavLink to="/" className="text-white text-sm mt-[2px]">NetMastro</NavLink>
+            </div>
             {/* <div className="side-nav__devider my-6"></div> */}
             <Nav classes={classes}  />
         </nav>            
