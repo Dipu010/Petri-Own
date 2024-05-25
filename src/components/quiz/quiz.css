@@ -24,12 +24,13 @@
    
   .li_quiz {
     margin-top: 8px;
-    background-color: darkgray;
+    background-color: white;
     padding: 16px;
-    border: 3px solid white;
+    border: 3px solid darkgray;
     border-radius: 20px;
     font-size: 20px;
     margin-bottom: 10px;
+    color: black;
   }
    
   .question-text {

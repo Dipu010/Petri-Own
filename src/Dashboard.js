@@ -154,7 +154,7 @@ export const Dashboard = () => {
             </div>
             
           </div>
-          <div className=" mt-4 right-0 text-right mr-1 ">Copyright @ 2024</div>
+          <div className=" mt-4 right-0 text-right mr-1 ">All rights reserved-Copyright @ 2024</div>
         </div>
         
       </div>
